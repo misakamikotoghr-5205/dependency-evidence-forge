@@ -1,0 +1,24 @@
+# Replace the unregistered placeholder by running `forge register` as the owner.
+# This repository has not been deployed or installed in a real Jira site.
+app:
+  id: ari:cloud:ecosystem::app/00000000-0000-4000-8000-000000000000
+  runtime:
+    name: nodejs24.x
+modules:
+  jira:issuePanel:
+    - key: dependency-evidence-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: Dependency Evidence
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+permissions:
+  scopes:
+    - read:jira-work

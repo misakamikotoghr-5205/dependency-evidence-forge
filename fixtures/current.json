@@ -1,0 +1,123 @@
+{
+  "site_id": "fictional-demo-site",
+  "root_key": "APP-1",
+  "link_type_ids": [
+    "10000"
+  ],
+  "direction": "inward",
+  "page_size": 2,
+  "captured_at": "2026-11-05T12:00:00Z",
+  "issues": [
+    {
+      "key": "APP-1",
+      "fields": {
+        "summary": "Fictional release: invoice export with retention changes",
+        "status": {
+          "id": "2",
+          "name": "In Progress",
+          "statusCategory": {
+            "key": "indeterminate"
+          }
+        },
+        "updated": "2026-11-05T11:00:00Z",
+        "issuelinks": [
+          {
+            "id": "APP-1-CORE-2",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks"
+            },
+            "inwardIssue": {
+              "key": "CORE-2"
+            }
+          },
+          {
+            "id": "APP-1-OPS-3",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks"
+            },
+            "inwardIssue": {
+              "key": "OPS-3"
+            }
+          },
+          {
+            "id": "APP-1-SEC-4",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks"
+            },
+            "inwardIssue": {
+              "key": "SEC-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "CORE-2",
+      "fields": {
+        "summary": "Fictional schema migration",
+        "status": {
+          "id": "3",
+          "name": "Done",
+          "statusCategory": {
+            "key": "done"
+          }
+        },
+        "updated": "2026-11-05T10:00:00Z",
+        "issuelinks": [
+          {
+            "id": "CORE-2-OPS-3",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks"
+            },
+            "inwardIssue": {
+              "key": "OPS-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "OPS-3",
+      "fields": {
+        "summary": "Fictional deployment checklist reopened",
+        "status": {
+          "id": "2",
+          "name": "In Progress",
+          "statusCategory": {
+            "key": "indeterminate"
+          }
+        },
+        "updated": "2026-11-05T10:30:00Z",
+        "issuelinks": [
+          {
+            "id": "OPS-3-CORE-2",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks"
+            },
+            "inwardIssue": {
+              "key": "CORE-2"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "omitted_status": {
+    "SEC-4": 403
+  }
+}
