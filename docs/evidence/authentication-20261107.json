@@ -1,0 +1,83 @@
+{
+  "checked_on_utc": "2026-11-07",
+  "source_head": "4b1259100337e4f97a07b4aa06f1bd7dc64648c5",
+  "tool": "official @forge/cli",
+  "version": "15.0.0",
+  "installation_scope": "task-local tooling outside the project repository",
+  "npm_install_options": ["--ignore-scripts", "--no-audit", "--no-fund"],
+  "runtime": {
+    "initial_node_version": "24.22.0",
+    "declared_cli_node_engines": "^22.23.4 || ^24.22.1 || >=26.12.1",
+    "replacement_node_version": "24.22.1",
+    "replacement_scope": "task-local; system Node unchanged",
+    "official_archive": "https://nodejs.org/dist/v24.22.1/node-v24.22.1-linux-x64.tar.xz",
+    "official_checksums": "https://nodejs.org/dist/v24.22.1/SHASUMS256.txt",
+    "archive_sha256_verified_against_official_checksums": true
+  },
+  "credential_environment_presence": {
+    "FORGE_EMAIL": false,
+    "FORGE_API_TOKEN": false,
+    "values_inspected_or_recorded_by_agent": false
+  },
+  "attempts": [
+    {
+      "command": "forge --version",
+      "node_version": "24.22.0",
+      "timeout_seconds": 8,
+      "result": "timeout",
+      "process_terminated": true
+    },
+    {
+      "command": "forge whoami",
+      "node_version": "24.22.0",
+      "timeout_seconds": 8,
+      "exit_code": 1,
+      "elapsed_seconds": 5.159,
+      "result": "status_unavailable",
+      "unsupported_node_warning_observed": true
+    },
+    {
+      "command": "forge whoami",
+      "node_version": "24.22.1",
+      "timeout_seconds": 8,
+      "exit_code": 1,
+      "elapsed_seconds": 5.028,
+      "result": "analytics_preference_required"
+    },
+    {
+      "command": "forge settings set usage-analytics false",
+      "node_version": "24.22.1",
+      "exit_code": 0,
+      "elapsed_seconds": 4.094,
+      "result": "local CLI usage analytics declined"
+    },
+    {
+      "command": "forge whoami",
+      "node_version": "24.22.1",
+      "timeout_seconds": 8,
+      "exit_code": 1,
+      "elapsed_seconds": 4.862,
+      "result": "authentication_required",
+      "credential_store_error_observed": true,
+      "unsupported_node_warning_observed": false
+    }
+  ],
+  "usable_authenticated_identity_obtained": false,
+  "historical_keychain_entries_checked_directly": false,
+  "credential_store_limitation": "The official CLI reported a credential-store error. This setup used npm --ignore-scripts; native keychain support and any historical credential entries were not independently verified. Do not infer that no account or historical keychain entry exists.",
+  "raw_account_output_retained": false,
+  "login_initiated": false,
+  "new_scoped_token_created": false,
+  "app_registered": false,
+  "manifest_placeholder_changed": false,
+  "app_deployed": false,
+  "app_installed": false,
+  "live_jira_requests": 0,
+  "contest_submitted": false,
+  "next_required_step": "Account owner establishes supported Forge authentication using an accessible OS keychain or securely configured email and scoped token. Any new token scopes or platform agreement require current confirmation before registration and development deployment.",
+  "official_sources": [
+    "https://developer.atlassian.com/platform/forge/getting-started/",
+    "https://developer.atlassian.com/platform/forge/cli-reference/whoami/",
+    "https://developer.atlassian.com/platform/forge/cli-reference/login/"
+  ]
+}

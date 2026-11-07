@@ -4,6 +4,15 @@ Freeze the dependency context you reviewed, then compare it with current evidenc
 
 **Status:** the local engine, fictional workflows, official SDK handler, UI type check and bundles are verified. The app has **not** been registered, deployed, installed in Jira or submitted to Codegeist. No live Jira credentials were used. The manifest contains an explicit unregistered placeholder; a real judge installation link is still required. This project uses deterministic graph analysis, with no AI inference claim.
 
+On 2026-11-07, a task-local official Forge CLI 15.0.0 was installed and checked
+using an official, checksum-verified Node 24.22.1 runtime. After declining CLI
+usage analytics, a bounded `forge whoami` check failed with an authentication
+requirement and a credential-store error. No usable authenticated identity was
+obtained; the supported credential environment variables were absent. This does
+not establish that no historical keychain entry exists. No login, new token,
+registration, deployment or installation was initiated. The complete sanitized
+attempt sequence and setup limits are in the [check record](docs/evidence/authentication-20261107.json).
+
 ## Run the full local workflow
 
 Node 24 is recommended (Node 22+ for the offline CLI).
