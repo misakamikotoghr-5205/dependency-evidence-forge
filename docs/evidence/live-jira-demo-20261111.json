@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "project": "dependency-evidence-forge",
+  "recorded_on": "2026-11-11",
+  "artifact": "../media/dependency-evidence-forge-demo.mp4",
+  "duration_seconds": 130.0,
+  "bytes": 2113146,
+  "sha256": "ab97e57c41a1175839aba888b0be40af450ffc0b0978d7ff4bf21615e0ec108d",
+  "video": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "25/1",
+    "pix_fmt": "yuv420p"
+  },
+  "audio": {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2
+  },
+  "audio_content": "silent anullsrc; English burned captions",
+  "production": "Eight live Jira Cloud screenshots of the production Forge issuePanel on fictional project REL plus one offline CLI forbidden-permission report, edited into ten captioned 1080p segments.",
+  "continuous_screen_recording": false,
+  "source_images_modified_to_fabricate_ui_state": false,
+  "browser_chrome_accounts_unrelated_tabs_removed": true,
+  "forge_app_id": "ari:cloud:ecosystem::app/db945c41-33c1-42d6-b2ec-6b2c63de10cf",
+  "forge_environment": "production",
+  "qa": {
+    "full_decode_exit_code": 0,
+    "full_decode_stderr_empty": true
+  },
+  "timeline": [
+    {
+      "segment": 1,
+      "start_seconds": 0,
+      "duration_seconds": 12,
+      "title": "Freeze Reviewed Context",
+      "source_capture_name": "01-apps-menu.png",
+      "source_capture_sha256": "3c84d6c9b3f154f3e44d9e5b4f4f6326b24af2c17ce815b812819e253521bca7",
+      "crop": [
+        205,
+        148,
+        1525,
+        855
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 2,
+      "start_seconds": 12,
+      "duration_seconds": 12,
+      "title": "Read-Only Forge Panel",
+      "source_capture_name": "02-panel-initial.png",
+      "source_capture_sha256": "44415e098d0ae6b95359f7023adf51c359a734f4b809e7e43e106c87b0de7313",
+      "crop": [
+        205,
+        148,
+        1525,
+        1140
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 3,
+      "start_seconds": 24,
+      "duration_seconds": 12,
+      "title": "Explicit Link Scope",
+      "source_capture_name": "03-link-type-dropdown.png",
+      "source_capture_sha256": "66dd0e1e224387a4378460c25e9772f5d6c0ab35d146ac22ea0402ae77473554",
+      "crop": [
+        205,
+        420,
+        1120,
+        1140
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 4,
+      "start_seconds": 36,
+      "duration_seconds": 12,
+      "title": "Verify Direction Semantics",
+      "source_capture_name": "04-link-type-selected.png",
+      "source_capture_sha256": "ac9bcf87b2dc27d6e6acb822a0e3ba23321b9175ae7e6fe75e2331bb14888cb0",
+      "crop": [
+        205,
+        420,
+        1120,
+        1140
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 5,
+      "start_seconds": 48,
+      "duration_seconds": 14,
+      "title": "Baseline: Clear in Scope",
+      "source_capture_name": "05-baseline-captured.png",
+      "source_capture_sha256": "727d09c09fc3c8d1e8ebbaa353fa349a7063b96a4235ee3406709e1b03d8cff0",
+      "crop": [
+        205,
+        420,
+        1120,
+        1185
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 6,
+      "start_seconds": 62,
+      "duration_seconds": 14,
+      "title": "Private Baseline Snapshot",
+      "source_capture_name": "07-baseline-populated.png",
+      "source_capture_sha256": "40f23fccd1262431b229487fe1c798c3bb40b691d7111e89fb26258be92f17fb",
+      "crop": [
+        205,
+        148,
+        1120,
+        1120
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 7,
+      "start_seconds": 76,
+      "duration_seconds": 16,
+      "title": "Live Drift: Blockers & Cycle",
+      "source_capture_name": "08-recheck-drift-top.png",
+      "source_capture_sha256": "15743b93ee6879335eaee978746f5fa827e98285659a05d4750a53d44ed0f118",
+      "crop": [
+        205,
+        340,
+        1120,
+        1190
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 8,
+      "start_seconds": 92,
+      "duration_seconds": 16,
+      "title": "Field-Level Recheck Verdict",
+      "source_capture_name": "09-recheck-drift-details.png",
+      "source_capture_sha256": "c589d5cbcb1594c376ae3a35088555c050e778a1e8a3ed6717f7cbdad42c18d9",
+      "crop": [
+        205,
+        180,
+        1120,
+        1190
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 9,
+      "start_seconds": 108,
+      "duration_seconds": 12,
+      "title": "Hidden Items Stay Unknown",
+      "source_capture_name": "10-offline-report-forbidden.png",
+      "source_capture_sha256": "f95de0ad412cf06ffd7264d5aae301c921ebdc0ebff5e1bd04863261439b8ea1",
+      "crop": [
+        195,
+        115,
+        1385,
+        1185
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 10,
+      "start_seconds": 120,
+      "duration_seconds": 10,
+      "title": "Ready for Judge Review",
+      "source_capture_name": "09-recheck-drift-details.png",
+      "source_capture_sha256": "c589d5cbcb1594c376ae3a35088555c050e778a1e8a3ed6717f7cbdad42c18d9",
+      "crop": [
+        205,
+        310,
+        1120,
+        960
+      ],
+      "privacy_reviewed": true
+    }
+  ],
+  "public_poster_frames": [
+    {
+      "path": "../media/live-baseline-captured.png",
+      "bytes": 240229,
+      "sha256": "f7f9f4a94955d5bc8170ebf39576b07597d8420eaf2a832e4b0aeeccfd141264"
+    },
+    {
+      "path": "../media/live-recheck-drift.png",
+      "bytes": 253506,
+      "sha256": "cb38359c7faf6ec187495576e54069906abe1c08c41db8797ff71d58b84d1bc2"
+    }
+  ]
+}
