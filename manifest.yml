@@ -1,7 +1,7 @@
 # Replace the unregistered placeholder by running `forge register` as the owner.
 # This repository has not been deployed or installed in a real Jira site.
 app:
-  id: ari:cloud:ecosystem::app/00000000-0000-4000-8000-000000000000
+  id: ari:cloud:ecosystem::app/db945c41-33c1-42d6-b2ec-6b2c63de10cf
   runtime:
     name: nodejs24.x
 modules:
